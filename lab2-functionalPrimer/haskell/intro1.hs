@@ -5,13 +5,14 @@ r1 = 1
 r2 = b^2 + 1/b where b = 2
 
 -- define a function:
+diff :: Double -> Double -> Double
 diff a b = abs (a - b)
 
 r3 = diff (diff a a) a  where a = 1
 r4 = diff (diff a b) b  where a = 1; b = 1
 
 -- lists by enumeration
-r5 = [1,3,4,1]
+r5 = [1,3,4,1] 
 r6 = [1..5]
 
 inc n = n + 1
